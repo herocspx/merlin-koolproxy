@@ -429,7 +429,7 @@ function conf2obj(){
 }
 
 function reload_Soft_Center() {
-	location.href = "/Main_Soft_center.asp";
+	location.href = "/Module_Softcenter.asp";
 }
 
 function update_visibility(r){
@@ -1144,19 +1144,19 @@ function save(){
 	//acllist += data2[ i ].join( '<' ) + '>';
 	var sourceList="";
 	if(E("koolproxy_rule_enable_d1").checked == true){
-		sourceList += "1|koolproxy.txt|https://kprule.com/koolproxy.txt|静态规则>"
+		sourceList += "1|koolproxy.txt|https://raw.githubusercontent.com/houzi-/CDN/master/koolproxy.txt|静态规则>"
 	}else{
-		sourceList += "0|koolproxy.txt|https://kprule.com/koolproxy.txt|静态规则>"
+		sourceList += "0|koolproxy.txt|https://raw.githubusercontent.com/houzi-/CDN/master/koolproxy.txt|静态规则>"
 	}
 	if(E("koolproxy_rule_enable_d2").checked == true){
-		sourceList += "1|daily.txt|https://kprule.com/daily.txt|每日规则>"
+		sourceList += "1|daily.txt|https://raw.githubusercontent.com/houzi-/CDN/master/daily.txt|每日规则>"
 	}else{
-		sourceList += "0|daily.txt|https://kprule.com/daily.txt|每日规则>"
+		sourceList += "0|daily.txt|https://raw.githubusercontent.com/houzi-/CDN/master/daily.txt|每日规则>"
 	}
 	if(E("koolproxy_rule_enable_d3").checked == true){
-		sourceList += "1|kp.dat|https://kprule.com/kp.dat|视频规则>"
+		sourceList += "1|https://raw.githubusercontent.com/houzi-/CDN/master/kp.dat|视频规则>"
 	}else{
-		sourceList += "0|kp.dat|https://kprule.com/kp.dat|视频规则>"
+		sourceList += "0|kp.dat|https://raw.githubusercontent.com/houzi-/CDN/master/kp.dat|视频规则>"
 	}
 	if(E("koolproxy_rule_enable_d4").checked == true){
 		sourceList += "1|user.txt||自定规则>"
