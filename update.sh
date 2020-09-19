@@ -16,7 +16,7 @@ fi
 #get latest rules
 cd data/rules
 rm -rf *
-wget --no-check-certificate https://raw.githubusercontent.com/houzi-/CDN/master/koolproxy.txt
-wget --no-check-certificate https://raw.githubusercontent.com/houzi-/CDN/master/daily.txt
-wget --no-check-certificate https://raw.githubusercontent.com/houzi-/CDN/master/kp.dat
-wget --no-check-certificate https://raw.githubusercontent.com/houzi-/CDN/master/user.txt
+wget --no-check-certificate https://down.cmccw.xyz/koolproxy.txt
+wget --no-check-certificate https://down.cmccw.xyz/daily.txt
+wget --no-check-certificate https://down.cmccw.xyz/kp.dat
+wget --no-check-certificate https://down.cmccw.xyz/user.txt

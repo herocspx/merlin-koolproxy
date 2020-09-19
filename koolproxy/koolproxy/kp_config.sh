@@ -38,9 +38,9 @@ write_sourcelist(){
 		echo $koolproxy_sourcelist|sed 's/>/\n/g' > $KP_DIR/data/source.list
 	else
 		cat > $KP_DIR/data/source.list <<-EOF
-			1|koolproxy.txt|https://raw.githubusercontent.com/houzi-/CDN/master/koolproxy.txt|
-			1|daily.txt|https://raw.githubusercontent.com/houzi-/CDN/master/daily.txt|
-			1|kp.dat|https://raw.githubusercontent.com/houzi-/CDN/master/kp.dat|
+			1|koolproxy.txt|https://down.cmccw.xyz/koolproxy.txt|
+			1|daily.txt|https://down.cmccw.xyz/daily.txt|
+			1|kp.dat|https://down.cmccw.xyz/kp.dat|
 			1|user.txt||
 			
 		EOF
