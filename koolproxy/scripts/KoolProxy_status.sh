@@ -18,7 +18,7 @@ custom_nu_local=`grep -E -v "^!" $KSROOT/koolproxy/data/rules/user.txt | wc -l`
 
 rm -rf /tmp/kp_tp.txt
 tp_rules=`dbus list koolproxy_rule_file_|cut -d "=" -f1|cut -d "_" -f4|sort -n`
-i=1
+local i=1
 for tp_rule in $tp_rules
 do
 	tprule_name=`dbus get koolproxy_rule_file_$tp_rule`
@@ -38,10 +38,10 @@ if [ -f "/tmp/kp_tp.txt" ];then
 else
 	TP=""
 fi
-rm -rf /tmp/koolproxy.log
+
 if [ "$status" == "2" ];then
-	echo "【$date】 $version  运行正常！(PID: $pid)@@<span>$rules_date_local / $rules_nu_local条</span>@@<span>$daily_nu_local条</span>@@<span>$video_date_local<span>@@<span>$custom_nu_local条</span>$TP" > /tmp/koolproxy.log
+	http_response "【$date】 $version  运行正常！(PID: $pid)@@<span>$rules_date_local / $rules_nu_local条</span>@@<span>$daily_nu_local条</span>@@<span>$video_date_local<span>@@<span>$custom_nu_local条</span>$TP"
 else
-	echo "<font color='#FF0000'>【警告】：进程未运行！请点击提交按钮！</font>@@<span>$rules_date_local / $rules_nu_local条</span>@@<span>$daily_nu_local条</span>@@<span>$video_date_local<span>@@<span>$custom_nu_local条</span>$TP" > /tmp/koolproxy.log
+	http_response "<font color='#FF0000'>【警告】：进程未运行！请点击提交按钮！</font>@@<span>$rules_date_local / $rules_nu_local条</span>@@<span>$daily_nu_local条</span>@@<span>$video_date_local<span>@@<span>$custom_nu_local条</span>$TP"
 fi
-echo XU6J03M6 >> /tmp/koolproxy.log
+
