@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# shadowsocks script for HND router with kernel 4.1.27 merlin firmware
+# koolshare script for arm router with kernel 2.6.36.4 merlin firmware
 # by sadog (sadoneli@gmail.com) from koolshare.cn
 
 alias echo_date='echo 【$(TZ=UTC-8 date -R +%Y年%m月%d日\ %X)】:'
