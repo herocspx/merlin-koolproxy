@@ -1395,7 +1395,7 @@ function openkpHint(itemNum) {
 														user.txt
 													</td>
 													<td>
-														https://cdn.jsdelivr.net/gh/houzi-/CDN/user.txt
+														https://down.cmccw.xyz/user.txt
 													</td>
 													<td style="text-align:center;">
 														自定规则
